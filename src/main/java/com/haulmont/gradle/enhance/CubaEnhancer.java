@@ -181,6 +181,8 @@ public class CubaEnhancer {
 
                             if (!StringUtils.equals(messageValue, transformedMessage)) {
                                 annotation.addMemberValue("message", new StringMemberValue(transformedMessage, constpool));
+                                log.debug(String.format("Class: %s, field: %s, annotation: %s changed value from %s to %s",
+                                        ctClass.getName(), field.getName(), annotation.getTypeName(), messageValue, transformedMessage));
                             }
                         }
                     }

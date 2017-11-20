@@ -16,11 +16,6 @@ import com.haulmont.gradle.enhance.BeanValidationMessageTransformer
  * limitations under the License.
  */
 
-
-
-/**
- *
- */
 class EnhanceRegExTest extends GroovyTestCase {
 
     def packageName = "com.haulmont.app.global"
